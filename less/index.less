@@ -55,5 +55,40 @@ table {
 
 html, body {
 	height: 100%;
+	font-size: 62.5%;
 }
+
+//Variables
+@main-font: 'Raleway', sans-serif;
+@main-color: aliceblue;
+
+//Mixins
+.image-size(){
+	height: 100%;
+	width: auto;
+}
+
+.center() {
+	margin: 0 auto;
+}
+
+
+	header {
+		height: 100px;
+		padding-top: 40px;
+	}
+	nav {
+		width: 80%;
+		.center();
+		display: flex;
+		justify-content: space-between;
+		}
+	a {
+		text-decoration: none;
+		font-family: @main-font;
+		font-size: 2rem;
+		color: darkslategray;
+	}
+	
+
 
