@@ -64,14 +64,20 @@ html, body {
 
 //Mixins
 .image-size(){
-	height: 100%;
-	width: auto;
+	height: auto;
+	width: 100%;
 }
 
 .center() {
 	margin: 0 auto;
 }
 
+
+
+.main-container {
+	max-width: 900px;
+	width: 100%;
+	.center;
 
 	header {
 		height: 100px;
@@ -106,6 +112,38 @@ html, body {
 		text-align: center;
 		}
 	}
+
+	.main-content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	.boxes {
+		height: 400px;
+		width: 45%;
+		display: flex;
+		margin: 20px;
+	}
 	
-	
+	h1 {
+		font-size: 4rem;
+	}
+
+	img {
+		.image-size;
+	}
+
+	h2 {
+		font-size: 4rem;
+	}
+
+	h3 {
+		font-size: 3rem;
+	}
+	p {
+		font-size: 2rem;
+	}
+}
+
+
 

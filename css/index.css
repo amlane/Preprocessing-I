@@ -135,39 +135,71 @@ body {
   height: 100%;
   font-size: 62.5%;
 }
-header {
+.main-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+.main-container header {
   height: 100px;
   padding-top: 40px;
 }
 @media (max-width: 500px) {
-  header {
+  .main-container header {
     padding-top: 0;
     height: 100%;
   }
 }
-nav {
+.main-container nav {
   width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
-  nav {
+  .main-container nav {
     flex-direction: column;
     width: 100%;
   }
 }
-a {
+.main-container a {
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-size: 2rem;
   color: darkslategray;
 }
 @media (max-width: 500px) {
-  a {
+  .main-container a {
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px dashed silver;
     text-align: center;
   }
+}
+.main-container .main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.main-container .boxes {
+  height: 400px;
+  width: 45%;
+  display: flex;
+  margin: 20px;
+}
+.main-container h1 {
+  font-size: 4rem;
+}
+.main-container img {
+  height: auto;
+  width: 100%;
+}
+.main-container h2 {
+  font-size: 4rem;
+}
+.main-container h3 {
+  font-size: 3rem;
+}
+.main-container p {
+  font-size: 2rem;
 }
