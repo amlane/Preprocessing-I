@@ -182,6 +182,12 @@ body {
   justify-content: space-evenly;
   font-family: 'Raleway', sans-serif;
 }
+@media (max-width: 500px) {
+  .main-container .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .main-container .boxes {
   height: 400px;
   width: 50%;
@@ -198,6 +204,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .main-container .hello {
+    margin: 0 auto;
+    width: 95%;
+    height: 200px;
+  }
+}
 .main-container .intro {
   display: flex;
   flex-direction: column;
@@ -209,12 +222,28 @@ body {
   padding-bottom: 5%;
   margin-bottom: 5%;
 }
+@media (max-width: 500px) {
+  .main-container .intro {
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 200px;
+  }
+}
 .main-container .skills {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: azure;
   padding: 30px;
+}
+@media (max-width: 500px) {
+  .main-container .skills {
+    margin: 0 auto;
+    width: 90%;
+  }
 }
 .main-container h1 {
   font-size: 5rem;
