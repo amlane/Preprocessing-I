@@ -76,19 +76,36 @@ html, body {
 	header {
 		height: 100px;
 		padding-top: 40px;
+
+		@media(max-width: 500px){
+		padding-top: 0;
+		height: 100%;
+		}
 	}
 	nav {
 		width: 80%;
 		.center();
 		display: flex;
 		justify-content: space-between;
+
+		@media(max-width: 500px){
+		flex-direction: column;
+		width: 100%;
+		}
 		}
 	a {
 		text-decoration: none;
 		font-family: @main-font;
 		font-size: 2rem;
 		color: darkslategray;
+
+		@media(max-width: 500px){
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-bottom: 1px dashed silver;
+		text-align: center;
+		}
 	}
 	
-
+	
 
