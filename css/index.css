@@ -169,7 +169,7 @@ body {
   color: darkslategray;
 }
 .main-container header a:hover {
-  color: blanchedalmond;
+  color: rosybrown;
 }
 @media (max-width: 500px) {
   .main-container header a {
@@ -208,7 +208,7 @@ body {
   align-items: center;
 }
 .main-container .main-content .hello button {
-  background: blanchedalmond;
+  background: rosybrown;
   padding: 2% 8%;
   margin: 5%;
   border-radius: 5px;
@@ -219,7 +219,7 @@ body {
 }
 .main-container .main-content .hello button:hover {
   background: black;
-  color: blanchedalmond;
+  color: rosybrown;
 }
 @media (max-width: 500px) {
   .main-container .main-content .hello {
@@ -253,7 +253,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: blanchedalmond;
+  background: rosybrown;
   padding: 30px;
 }
 @media (max-width: 500px) {
@@ -324,13 +324,13 @@ body {
 .main-container .bottom-content thead {
   font-weight: bold;
   border-bottom: 1px dashed silver;
-  background: blanchedalmond;
+  background: rosybrown;
 }
 .main-container .bottom-content td {
   padding: 2%;
 }
 .main-container .contact-form {
-  background: blanchedalmond;
+  background: rosybrown;
   height: 500px;
   width: 80%;
   margin: 0 auto;
