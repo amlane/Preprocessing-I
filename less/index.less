@@ -60,7 +60,7 @@ html, body {
 
 //Variables
 @main-font: 'Raleway', sans-serif;
-@main-color: whitesmoke;
+@main-color: blanchedalmond;
 
 //Mixins
 .image-size(){
@@ -112,6 +112,10 @@ html, body {
 		font-family: @main-font;
 		font-size: 2rem;
 		color: darkslategray;
+
+		&:hover {
+			color: @main-color;
+		}
 
 		@media(max-width: 500px){
 		padding-top: 15px;

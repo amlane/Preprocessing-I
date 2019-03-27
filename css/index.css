@@ -168,6 +168,9 @@ body {
   font-size: 2rem;
   color: darkslategray;
 }
+.main-container header a:hover {
+  color: blanchedalmond;
+}
 @media (max-width: 500px) {
   .main-container header a {
     padding-top: 15px;
@@ -205,7 +208,7 @@ body {
   align-items: center;
 }
 .main-container .main-content .hello button {
-  background: whitesmoke;
+  background: blanchedalmond;
   padding: 2% 8%;
   margin: 5%;
   border-radius: 5px;
@@ -216,7 +219,7 @@ body {
 }
 .main-container .main-content .hello button:hover {
   background: black;
-  color: whitesmoke;
+  color: blanchedalmond;
 }
 @media (max-width: 500px) {
   .main-container .main-content .hello {
@@ -250,7 +253,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: whitesmoke;
+  background: blanchedalmond;
   padding: 30px;
 }
 @media (max-width: 500px) {
@@ -321,13 +324,13 @@ body {
 .main-container .bottom-content thead {
   font-weight: bold;
   border-bottom: 1px dashed silver;
-  background: whitesmoke;
+  background: blanchedalmond;
 }
 .main-container .bottom-content td {
   padding: 2%;
 }
 .main-container .contact-form {
-  background: whitesmoke;
+  background: blanchedalmond;
   height: 500px;
   width: 80%;
   margin: 0 auto;
