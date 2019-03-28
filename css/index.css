@@ -292,7 +292,7 @@ body {
   border-bottom: 1px dashed silver;
 }
 .main-container .bottom-content {
-  width: 95%;
+  width: 100%;
   font-family: 'Raleway', sans-serif;
   height: 300px;
   padding-top: 20px;
