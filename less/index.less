@@ -63,6 +63,9 @@ html, body {
 @main-color: rosybrown;
 
 //Mixins
+.test(){
+	border: 1px solid red;
+}
 .image-size(){
 	height: 100%;
 	width: auto;
@@ -133,6 +136,11 @@ html, body {
 		justify-content: space-evenly;
 		font-family: @main-font;
 
+		@media (max-width: 850px){
+			.columns;
+			align-items: center;
+		}
+
 		@media(max-width: 500px){
 			.columns;
 		}
@@ -141,6 +149,21 @@ html, body {
 			height: 400px;
 			width: 50%;
 			display: flex;
+
+			@media (max-width: 850px){
+			width: 90%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 350px;
+		}
+			
+			@media (max-width: 500px){
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+			
 		}
 
 		img {
@@ -148,10 +171,13 @@ html, body {
 			border-radius: 50%;
 			border: 10px solid @main-color;
 
+			@media (max-width: 850px){
+			
+		}
+
 			@media (max-width: 500px) {
 				margin-top: 30px;
 				width: 400px;
-				margin-left: 15%;
 			}
 		}
 
@@ -194,6 +220,12 @@ html, body {
 			border-bottom: 1px solid;
 			padding-bottom: 5%;
 			margin-bottom: 5%;
+		}
+
+		@media (max-width: 850px){
+			height: 200px;
+			width: 80%;
+			padding-top: 0;
 		}
 
 		@media(max-width: 500px){
