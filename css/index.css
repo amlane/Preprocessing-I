@@ -1,1 +1,442 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+.main-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.main-container header {
+  height: 100px;
+  padding-top: 40px;
+}
+@media (max-width: 500px) {
+  .main-container header {
+    padding-top: 0;
+    height: 100%;
+  }
+}
+.main-container header nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .main-container header nav {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.main-container header a {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  color: darkslategray;
+}
+.main-container header a:hover {
+  color: rosybrown;
+}
+@media (max-width: 500px) {
+  .main-container header a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed silver;
+    text-align: center;
+  }
+}
+.main-container .main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-family: 'Raleway', sans-serif;
+}
+@media (max-width: 850px) {
+  .main-container .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .main-container .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.main-container .main-content .boxes {
+  height: 400px;
+  width: 50%;
+  display: flex;
+}
+@media (max-width: 850px) {
+  .main-container .main-content .boxes {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+  }
+}
+@media (max-width: 500px) {
+  .main-container .main-content .boxes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.main-container .main-content img {
+  height: 100%;
+  width: auto;
+  border-radius: 50%;
+  border: 10px solid rosybrown;
+}
+@media (max-width: 500px) {
+  .main-container .main-content img {
+    margin-top: 30px;
+    width: 370px;
+  }
+}
+.main-container .main-content .hello {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .main-content .hello h1 {
+  font-weight: bold;
+}
+.main-container .main-content .hello button {
+  background: rosybrown;
+  padding: 2% 8%;
+  margin: 5%;
+  border-radius: 5px;
+  border: transparent;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  border: 1px solid;
+}
+.main-container .main-content .hello button:hover {
+  background: black;
+  color: rosybrown;
+}
+@media (max-width: 500px) {
+  .main-container .main-content .hello {
+    margin: 0 auto;
+    width: 95%;
+    height: 250px;
+  }
+}
+.main-container .main-content .intro {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3%;
+  padding-right: 20px;
+}
+.main-container .main-content .intro h2 {
+  border-bottom: 1px solid;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+}
+@media (max-width: 850px) {
+  .main-container .main-content .intro {
+    height: 200px;
+    width: 80%;
+    padding-top: 0;
+  }
+}
+@media (max-width: 500px) {
+  .main-container .main-content .intro {
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 250px;
+  }
+}
+.main-container .main-content .skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rosybrown;
+  padding: 30px;
+}
+@media (max-width: 500px) {
+  .main-container .main-content .skills {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.main-container .main-content h1 {
+  font-size: 5rem;
+  padding-bottom: 3%;
+  margin-bottom: 3%;
+  border-bottom: 1px dashed silver;
+  z-index: 1;
+}
+.main-container .main-content h2 {
+  font-size: 3.25rem;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.main-container .main-content h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.main-container .main-content p {
+  font-size: 2rem;
+  z-index: 1;
+}
+.main-container .main-content li {
+  list-style-type: none;
+  border-bottom: 1px dashed silver;
+}
+.main-container .main-content li p {
+  font-size: 1.7rem;
+  text-align: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+.main-container .bottom-content {
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  height: 300px;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+@media (max-width: 500px) {
+  .main-container .bottom-content {
+    margin-bottom: 0;
+    margin: 0 auto;
+    height: 250px;
+  }
+}
+.main-container .bottom-content h3 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.main-container .bottom-content table {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 2rem;
+  border-top: 1px solid;
+}
+@media (max-width: 500px) {
+  .main-container .bottom-content table {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+}
+.main-container .bottom-content thead {
+  font-weight: bold;
+  border-bottom: 1px dashed silver;
+  background: rosybrown;
+}
+.main-container .bottom-content tr {
+  border-bottom: 1px dashed silver;
+}
+.main-container .bottom-content td {
+  padding: 2%;
+}
+.main-container .contact-form {
+  background: rosybrown;
+  height: 500px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 5%;
+  border: 1px solid;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .main-container .contact-form {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+}
+.main-container .contact-form .users-name {
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-container .contact-form .users-email {
+  display: flex;
+  justify-content: center;
+}
+.main-container .contact-form input {
+  padding: 1% 5%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  border-top: 1px transparent;
+  border-right: 1px transparent;
+  border-left: 1px transparent;
+  border-bottom: 1px solid;
+  margin: 1.4%;
+}
+.main-container .contact-form .text-area {
+  display: flex;
+  justify-content: center;
+}
+.main-container .contact-form textarea {
+  resize: none;
+  height: 200px;
+  width: 90%;
+  border-radius: 5px;
+  margin: 1.4%;
+}
+.main-container .contact-form .submit-button {
+  display: flex;
+  justify-content: center;
+}
+.main-container .contact-form button {
+  background: white;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 1% 3%;
+  margin: 1.4%;
+  text-transform: uppercase;
+}
+.main-container .contact-form button:hover {
+  background: black;
+  color: rosybrown;
+}
